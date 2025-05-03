@@ -1,0 +1,106 @@
+.todo-container {
+    margin-bottom: 20px;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    padding: 12px 15px;
+    background-color: #f8f8f8;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+  
+  .todo-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .todo-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-form {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .todo-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .todo-form button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .todo-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .todo-item-text {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .todo-actions {
+    display: flex;
+  }
+  
+  .todo-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 8px;
+    margin-left: 5px;
+    border-radius: 3px;
+  }
+  
+  .edit-btn {
+    color: #2196f3;
+  }
+  
+  .edit-btn:hover {
+    background-color: rgba(33, 150, 243, 0.1);
+  }
+  
+  .delete-btn {
+    color: #f44336;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgba(244, 67, 54, 0.1);
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* 추가: 우선순위 뱃지 스타일 */
+  .priority-badge {
+    flex-grow: 0 !important;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+  }
