@@ -26,7 +26,7 @@ function RatingStar({ rating, max = 5 }) { // max 기본값을 5로 설정
   }
 
   return (
-    <div>{stars} ({rating}/{max})</div>
+    <div className="rating">{stars} ({rating}/{max})</div>
   );
 }
 

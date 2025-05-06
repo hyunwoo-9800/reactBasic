@@ -1,3 +1,4 @@
+/* 여행지 목록용 css */
 .travel-card {
   border-radius: 8px;
   overflow: hidden;
@@ -49,8 +50,10 @@
 .sort-control {
   display: flex;
   align-items: center;
+  margin-left: 66rem;
 }
 
+/* 정렬 옵션 css */
 .sort-control label {
   margin-right: 8px;
 }
@@ -59,4 +62,94 @@
   padding: 5px;
   border-radius: 4px;
   border: 1px solid #ddd;
+}
+
+/* 상세보기 버튼 css */
+.view-details-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.view-details-btn:hover {
+  background-color: #003d82;
+}
+
+/* 모달 css */
+.detail-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.detail-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.detail-content h2 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.rating {
+  color: #f8b400;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.detail-content .description {
+  line-height: 1.6;
+  color: #333;
+}
+
+.detail-content .loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.detail-content .visit-count {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
 }
