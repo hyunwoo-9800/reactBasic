@@ -7,7 +7,7 @@ function AddTodoForm({ onAdd }) {
   const [priority, setPriority] = useState('medium');
 
   const handleInputChange = (e) => {
-    console.log(`입력 변경:${e.target.value}`);
+    // console.log(`입력 변경:${e.target.value}`);
     setText(e.target.value);
   };
 
@@ -18,7 +18,7 @@ function AddTodoForm({ onAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`text.trim():${text.trim()}`);
+    // console.log(`text.trim():${text.trim()}`);
     if (!text.trim()) {
       console.log('빈 할일은 추가 할 수 없습니다');
       return;
