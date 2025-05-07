@@ -17,3 +17,5 @@ export const BACKGROUND_IMAGES = {
   exercise: exerciseBg,
   personal: personalBg,
 };
+
+export const FILTERS = ["all", "active", "completed", "important"];
