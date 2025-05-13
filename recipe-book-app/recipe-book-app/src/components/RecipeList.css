@@ -1,0 +1,399 @@
+/* 추가 CSS */
+.recipe-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.recipe-item:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+.recipe-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.recipe-header h3 {
+  margin: 0;
+  flex-grow: 1;
+  color: #d35400;
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  color: #555;
+}
+
+.category-icon svg {
+  font-size: 18px;
+}
+
+.add-recipe-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.add-recipe-form h2 {
+  margin-top: 0;
+  color: #d35400;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input[type='number'] {
+  width: 100px;
+}
+
+.submit-btn {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e67e22;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recipe-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  position: relative;
+  width: 19rem;
+  height: 430px;
+  min-height: 280px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.recipe-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+/* .recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+} */
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative; /* 헤더에 position 추가 */
+}
+
+.recipe-header h3 {
+  margin: 0;
+  color: #d35400;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: #d35400;
+}
+
+.recipe-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cooking-time {
+  background-color: #3498db;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.category-label {
+  background-color: #9b59b6;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.difficulty-badge {
+  background-color: orange;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.recipe-section {
+  margin-bottom: 15px;
+}
+
+.recipe-section h4 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.recipe-section p {
+  margin: 0;
+  color: #555;
+  white-space: pre-line;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.favorite-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #aaaaaa;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 5px;
+  margin-left: 5px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 3;
+}
+
+.favorite-btn.active {
+  color: #f1c40f;
+  text-shadow: 0 0 4px rgba(241, 196, 15, 0.5);
+  transform: scale(1.1);
+}
+
+.favorite-btn:hover {
+  color: #f39c12;
+  transform: scale(1.1);
+}
+
+/* 비활성화 상태에서도 윤곽이 더 선명하게 보이도록 */
+.favorite-btn:not(.active) {
+  color: #777777;
+  opacity: 0.8;
+}
+
+/* 별 주변에 미묘한 효과 */
+.favorite-btn::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.favorite-btn:hover::after {
+  opacity: 0.1;
+  background-color: #f39c12;
+}
+
+/* 레시피 아이템 배경 조정 */
+.recipe-item {
+  background-color: white;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.category-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #555;
+  width: 23%;
+  transition: all 0.3s ease;
+}
+
+.category-btn svg {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.category-btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.category-btn.selected {
+  background-color: #d35400;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-left: 20rem;
+  margin-bottom: 1rem;
+  /* flex-wrap: wrap; */
+  width: 30rem;
+}
+
+.filters button {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e0e0e0;
+}
+
+.filters button.active {
+  background-color: #d35400;
+  color: white;
+  border-color: #d35400;
+}
+
+@media (max-width: 768px) {
+  .category-btn {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .recipe-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 추가 */
+/* RecipeList.css에 추가 */
+.filters button {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filters button:hover {
+  background-color: #e9ecef;
+}
+
+.filters button.active {
+  background-color: #d35400;
+  color: white;
+  border-color: #d35400;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
